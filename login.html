@@ -81,7 +81,8 @@
                     </button>
                     <br>
                     <br>
-                    <button class="secondary-button">
+
+                    <button class="secondary-button" disabled>
                         Free Trial
                     </button>
                 </div>
@@ -91,18 +92,21 @@
             </div>
 
 
-            <!-- <div class="modal">
+            <div class="modal">
                 <div class="backdrop"></div>
 
 
                 <form class="login-card" name="login" action="$(link-login-only)" method="post" $(if chap-id)
                     onSubmit="return doLogin()" $(endif)>
 
-                    <h1>Log in</h1>
+                    <div>
 
-                    <input type="hidden" name="dst" value="$(link-orig)" />
-                    <input type="hidden" name="popup" value="true" />
+                        <h1>Login</h1>
 
+                        <input type="hidden" name="dst" value="$(link-orig)" />
+                        <input type="hidden" name="popup" value="true" />
+
+                        <!-- 
                     <p class="info $(if error)alert$(endif)">
                         $(if error == "")Please log in to use the internet hotspot service $(if trial ==
                         'yes')<br />Free trial available, <a
@@ -111,25 +115,29 @@
                         $(endif)
 
                         $(if error)$(error)$(endif)
-                    </p>
+                    </p> -->
+                        <p>Username</p>
 
-                    <label>
-                        <img class="ico" src="img/user.svg" alt="#" />
-                        <input name="username" type="text" value="$(username)" placeholder="Username" />
-                    </label>
+                        <label>
+                            <img class="ico" src="img/user.svg" alt="#" />
+                            <input  name="username" type="text" value="$(username)" placeholder="Username" />
+                        </label>
 
-                    <label>
-                        <img class="ico" src="img/password.svg" alt="#" />
-                        <input name="password" type="password" placeholder="Password" />
-                    </label>
+                        <p>password</p>
 
-                    <button class="primary-button" type="submit" > Connect </button>
+                        <label>
+                            <img class="ico" src="img/password.svg" alt="#" />
+                            <input  name="password" type="password" placeholder="Password" />
+                        </label>
+
+                        <button class="primary-small-button" type="submit"> Connect </button>
+                    </div>
 
                 </form>
 
-            </div> -->
-            
-          
+            </div>
+
+
             <div class="triangle-and-lines">
                 <hr>
 
@@ -148,7 +156,7 @@
                         3 jam
                     </h1>
 
-                    <p>Rp 2.000</p> 
+                    <p>Rp 2.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -157,7 +165,7 @@
                         5 jam
                     </h1>
 
-                    <p>Rp 3.000</p> 
+                    <p>Rp 3.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -166,7 +174,7 @@
                         1 Hari
                     </h1>
 
-                    <p>Rp 5.000</p> 
+                    <p>Rp 5.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -175,7 +183,7 @@
                         3 Hari
                     </h1>
 
-                    <p>Rp 10.000</p> 
+                    <p>Rp 10.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -184,7 +192,7 @@
                         5 Hari
                     </h1>
 
-                    <p>Rp 15.000</p> 
+                    <p>Rp 15.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -193,7 +201,7 @@
                         7 Hari
                     </h1>
 
-                    <p>Rp 20.000</p> 
+                    <p>Rp 20.000</p>
                 </div>
 
                 <div class="paket-item">
@@ -202,7 +210,7 @@
                         30 Hari
                     </h1>
 
-                    <p>Rp 80.000</p> 
+                    <p>Rp 80.000</p>
                 </div>
 
             </div>
