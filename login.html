@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
     <link rel="icon" href="img/delta icon.png" />
+    
 </head>
 
 <body>
@@ -74,7 +75,7 @@
                         <img class="joystic-image" src="img/Joystick.png" alt="">
                     </div> -->
                     <br>
-                    <button class="primary-button">
+                    <button id="login-button" class="primary-button">
 
                         Login Voucher
 
@@ -92,16 +93,19 @@
             </div>
 
 
-            <div class="modal">
-                <div class="backdrop"></div>
+            <div id="login-modal" class="modal" hidden>
 
 
                 <form class="login-card" name="login" action="$(link-login-only)" method="post" $(if chap-id)
                     onSubmit="return doLogin()" $(endif)>
+                    <div id="login-backdrop" class="backdrop"></div>
 
-                    <div>
+                    <div id="login" >
 
-                        <h1>Login</h1>
+                        <div>
+                            <h1>Login</h1>
+
+                        </div>
 
                         <input type="hidden" name="dst" value="$(link-orig)" />
                         <input type="hidden" name="popup" value="true" />
@@ -260,5 +264,7 @@
 
 
 </body>
+
+<script src="login.js" ></script>
 
 </html>
